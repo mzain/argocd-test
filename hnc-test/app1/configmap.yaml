@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: game-config
   namespace: parent-namespace
+  annotations:
+    propagate.hnc.x-k8s.io/all: "true"
 data:
   game.properties: |
     enemies=aliens
