@@ -1,0 +1,14 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: child-namespace
+  labels:
+    name: child-namespace
+---
+apiVersion: hnc.x-k8s.io/v1alpha2
+kind: HierarchyConfiguration
+metadata:
+  name: hierarchy
+  namespace: child-namespace
+spec:
+  parent: parent-namespace

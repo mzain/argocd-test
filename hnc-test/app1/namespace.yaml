@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: parent-namespace
+  labels:
+    name: parent-namespace
