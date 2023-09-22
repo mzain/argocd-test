@@ -1,6 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: withlabel
-  labels:
-    name: withlabel
+  name: withoutlabel
